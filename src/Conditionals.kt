@@ -36,8 +36,8 @@ fun main(){
 
     //alternative method
     var isold2 = when{
-        mynum in 18..130 -> "Old enough"
-        mynum in 1..17 -> "Too young"
+        mynum in 18..150 -> "Old enough!"
+        mynum in 1..17 -> "Too young!"
         else -> "Invalid Age"
     }
     println(isold2)
