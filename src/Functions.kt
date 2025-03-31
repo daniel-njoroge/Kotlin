@@ -37,4 +37,24 @@ fun main(){
     println(iseven2(31))
     println(iseven3(31))
     println(reducebyone(5))
+
+
+    //Anonymous functions
+    val stringLengthFunc: (String) -> Int = { input ->
+        input.length
+    }
+    val stringLength: Int = stringLengthFunc("Android")
+
+    println(stringLength)
+
+    //Higher-order functions - A function can take another function as an argument.
+    fun stringMapper(str: String, mapper: (String) -> Int): Int {
+        // Invoke function
+        return mapper(str)
+    }
+    println(stringMapper("Android", { input ->
+        input.length
+    }))
 }
+
+
